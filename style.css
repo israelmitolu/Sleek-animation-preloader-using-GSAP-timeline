@@ -1,0 +1,143 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap");
+
+/*  Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  max-width: 100%;
+  background: url(home1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+  padding: 1rem 5rem;
+}
+
+.logo {
+  font-family: "Abril Fatface", cursive;
+  text-decoration: underline;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  color: #fff;
+  text-align: center;
+  z-index: -1;
+}
+.hero-content h2 {
+  font-size: 3rem;
+  font-family: "Abril Fatface", cursive;
+  font-weight: lighter;
+}
+.hero-content p {
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  color: #f0f2f2;
+  margin: 1.5rem 0rem;
+  line-height: 24px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  color: #025959;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Preloader  */
+.preloader {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prl-logo {
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.3rem;
+  z-index: 2;
+}
+
+/* Sliders  */
+.lightCyan-slider,
+.persianGreen-slider,
+.white-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+}
+.lightCyan-slider {
+  background: #d5f2ef;
+}
+
+.persianGreen-slider {
+  background: #03a6a6;
+}
+
+.white-slider {
+  background: #fff;
+}
+
+.hide {
+  opacity: 0;
+  color: #03a6a6;
+  font-weight: lighter;
+}
+
+/* Responsive media queries */
+@media screen and (max-width: 768px) {
+  .logo,
+  .prl-logo {
+    font-size: 1rem;
+  }
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav {
+    padding: 1rem 3rem;
+  }
+}
